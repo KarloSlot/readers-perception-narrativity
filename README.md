@@ -24,6 +24,8 @@ NOTE: All preprocessing and data gathering necessary to run the computational mo
 # 'src'
 This subdirectory is used to run the actual computational models, the files in here are sometimes part of a sub-subdirectory 'classifier'. This is specified when needed.
 
-**classifier/config.py** - 
+**classifier/config.py** - File used by Piper et al. (2021) to determine several NLP features of texts. This is not further used within this research, but since it is imported by Piper et al. (2021), it is worth putting in this repository.
+
+**classifier/data_loader.py** - 
 
 **predict.py** - 
