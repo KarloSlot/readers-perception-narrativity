@@ -82,6 +82,18 @@ def get_prob_narr(test_fnames):
 
 
 def eli5_passage_results(df_piper_2022, df_universals, passage, label, path, algo, vec, names):
+    """
+    Get the ELI5 analysis of a specific passage
+
+    :param df_piper_2022: DataFrame Object of data set from Piper (2022)
+    :param df_universals: DataFrame Object of data set from our experiment
+    :param passage: DataFrame Object with single passage to get information of
+    :param label: String representing directory name
+    :param path: Path to put results
+    :param algo: Algorithm object used
+    :param vec: Vectorizer used
+    :param names: Feature names
+    """
     new_path = path + label + '/'
     if not os.path.exists(new_path):
         os.mkdir(new_path)
@@ -190,5 +202,5 @@ def main():
 
 
 if __name__ == '__main__':
-    model = 'word1'  # 'within-401' or 'within-401-pos-mood' or 'within-401-pos-tense' or 'trained-12k'
+    model = 'word1'
     main()
