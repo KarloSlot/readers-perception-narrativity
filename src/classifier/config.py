@@ -1,15 +1,5 @@
 import pandas as pd
 
-# BOOK_PATH = '/Users/sunyambagga/Desktop/txtLAB-2/minimal-narrativity/booknlp-output-narrativity/'
-# BOOK_PATH = '/Users/sunyambagga/Desktop/txtLAB-2/detecting-narrativity/booknlp-output-science-jstor/'
-# BOOK_PATH = '/Users/sunyambagga/Desktop/txtLAB-2/detecting-narrativity/booknlp-output-science-royal/'
-# BOOK_PATH = '/Users/sunyambagga/Desktop/txtLAB-2/detecting-narrativity/booknlp-output-poetry/'
-# print("\n\nUsing BookNLP folder path from config.py --", BOOK_PATH)
-
-# TTK_PATH = '/Users/sunyambagga/Desktop/txtLAB-2/minimal-narrativity/ttk-output-narrativity/'
-# LITBANK_PATH = '/Users/sunyambagga/Desktop/txtLAB-2/minimal-narrativity/litbank-output-narrativity/'
-# KARS_PATH = '/Users/sunyambagga/Desktop/txtLAB-2/minimal-narrativity/animacy/classifier_main_animate.tsv'
-
 PRONOUNS = ['i', 'you', 'he', 'she', 'we', 'they', 'me', 'him', 'her', 'us', 'them',
             'his', 'hers', 'my', 'mine', 'our', 'ours', 'your', 'yours', 'their', 'theirs',
             'thy', 'thee', 'thou']
