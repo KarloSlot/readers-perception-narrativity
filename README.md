@@ -18,7 +18,7 @@ In the subdirectory 'data', the data used in this research can be found. In the 
 
 **process_passages_booknlp.ipynb** - This notebook processes all available MinNarrative files from Piper et al. (2022). This produces a folder named 'BookNLP' which is used to train the computational models and should be put in this folder.
 
-NOTE: All preprocessing and data gathering necessary to run the computational models has been done already in this research. If you wish to gather the BookNLP data, you should obtain the MinNarrative files from Piper et al. (2022), run keep_dataset_only.py, followed by process_passages_nlp.ipynb. Make sure that the outcoming 'BookNLP' directory is unzipped in the folder 'data'.
+NOTE: All preprocessing and data gathering necessary to run the computational models has been done already in this research. If you wish to gather the BookNLP data, you should obtain the MinNarrative files from Piper et al. (2022), run keep_dataset_only.py, followed by process_passages_nlp.ipynb. Make sure that the outcoming 'BookNLP' directory is unzipped in the folder 'data'. When having trouble, please contact me (For LinkedIn, see Profile).
 
 
 ## 'src'
