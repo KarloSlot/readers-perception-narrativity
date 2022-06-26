@@ -22,4 +22,8 @@ NOTE: All preprocessing and data gathering necessary to run the computational mo
 
 
 # 'src'
-This subdirectory is used to run the actual computational models, 
+This subdirectory is used to run the actual computational models, the files in here are sometimes part of a sub-subdirectory 'classifier'. This is specified when needed.
+
+**classifier/config.py** - 
+
+**predict.py** - 
