@@ -1,2 +1,13 @@
 Data	Feature	F1-score	AUROC	Weighted F1	Precision	Recall	Accuracy	AUPRC	Parameters
-5S_325	pos1	
+5S_325	pos1	0.798	0.887	0.794	0.803	0.821	0.8	0.88	{'C': 1, 'penalty': 'l1', 'solver': 'liblinear'}
+5S_325	pos2	0.766	0.854	0.77	0.788	0.775	0.775	0.822	{'C': 1, 'penalty': 'l1', 'solver': 'liblinear'}
+5S_325	pos3	0.782	0.862	0.786	0.777	0.802	0.788	0.851	{'C': 1, 'penalty': 'l1', 'solver': 'liblinear'}
+5S_325	pos23	0.764	0.857	0.766	0.759	0.789	0.769	0.845	{'C': 1000, 'penalty': 'l1', 'solver': 'liblinear'}
+5S_325	word1	0.814	0.878	0.816	0.813	0.842	0.818	0.848	{'C': 1, 'penalty': 'l1', 'solver': 'liblinear'}
+5S_325	word2	0.776	0.851	0.78	0.764	0.802	0.782	0.825	{'C': 1000, 'penalty': 'l1', 'solver': 'liblinear'}
+5S_325	word3	0.693	0.677	0.585	0.557	0.921	0.618	0.6	{'C': 1000, 'penalty': 'l1', 'solver': 'liblinear'}
+5S_325	word23	0.794	0.858	0.795	0.774	0.829	0.797	0.828	{'C': 1000, 'penalty': 'l1', 'solver': 'liblinear'}
+5S_325	dep1	0.767	0.861	0.767	0.774	0.794	0.772	0.857	{'C': 1, 'penalty': 'l1', 'solver': 'liblinear'}
+5S_325	dep2	0.76	0.867	0.758	0.747	0.795	0.763	0.859	{'C': 1000, 'penalty': 'l1', 'solver': 'liblinear'}
+5S_325	dep3	0.716	0.805	0.721	0.708	0.749	0.726	0.789	{'C': 1000, 'penalty': 'l1', 'solver': 'liblinear'}
+5S_325	dep23	0.751	0.84	0.756	0.738	0.788	0.76	0.822	{'C': 1000, 'penalty': 'l1', 'solver': 'liblinear'}

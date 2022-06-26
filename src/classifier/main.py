@@ -107,7 +107,7 @@ def main(three_class=False):
 
 
 if __name__ == '__main__':
-    algo_name = 'rf'  # 'rf' or 'logreg' or 'svm'
+    algo_name = 'logreg'  # 'rf' or 'logreg' or 'svm'
     NUMBER_OF_FOLDS = 5
 
     three_class = False
