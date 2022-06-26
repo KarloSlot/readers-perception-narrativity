@@ -21,9 +21,20 @@ In the subdirectory 'data', the data used in this research can be found. In the 
 NOTE: All preprocessing and data gathering necessary to run the computational models has been done already. Therefore, to run the classifier, running files stored in 'data' is NOT needed.
 
 
-# 'src'
+## 'src'
 This subdirectory is used to run the actual computational models, the files in here are sometimes part of a sub-subdirectory 'classifier'. This is specified when needed.
 
 **classifier/config.py + classifier/data_loader.py + classifier/tuning.py + classifier/vectorizer.py** - Files used by Piper et al. (2021) to determine several NLP features of texts, construct and load training data and train computational models.
 
 **predict.py** - 
+
+## 'results'
+In this subdirectory are two other directories: (1) eli5_results and (2) model_results. In eli5_results, the produced ELI5 from predict.py can be found as per passage (accompanied with some passage information, such as narrative probability) and the general weights per feature, or word. In model_results, the results from main.py can be found, where the score of each pair of method and feature components can be found, e.g. RF with word-unigrams.
+
+## 'analysis'
+This subdirectory is used for storing graphs and plots construted by correlation.py to illustrate the correlation between aspects of our experiments and those of Piper et al. (2022). These plots can also be found in the main paper.
+
+# References
+Andrew Piper, Sunyam Bagga, Laura Monteiro, Andrew Yang, Marie Labrosse, and Yu Lu Liu. 2021. Detecting narrativity across long time scales. *Proceedings http://ceur-ws.org ISSN*, 1613:0073.
+
+Andrew Piper, Sunyam Bagga, Laura Monteiro, Andrew Yang, Marie Labrosse, and Yu Lu Liu. 2022. Unpublished data.
