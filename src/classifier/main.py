@@ -53,34 +53,6 @@ def run_experiments(algo, X, Y, name):
     elif name == 'dep23':
         funct = vectorizer.dep_bitri_grams
 
-    elif name == 'tense':
-        funct = vectorizer.tense
-    elif name == 'mood':
-        funct = vectorizer.mood
-    elif name == 'voice':
-        funct = vectorizer.voice
-    elif name == 'tense_mood_voice':
-        funct = vectorizer.tense_mood_voice
-
-    elif name == 'pos_tense':
-        funct = vectorizer.pos_tense
-    elif name == 'pos_mood':
-        funct = vectorizer.pos_mood
-    elif name == 'pos_voice':
-        funct = vectorizer.pos_voice
-    elif name == 'pos_tense_mood_voice':
-        funct = vectorizer.pos_tmv
-    elif name == 'pos_tense_mood_voice_quoted':
-        funct = vectorizer.pos_tmv_quoted
-
-
-    elif name == 'pos_dep_tense_mood_voice':  # pos1 (max=100) + dep1 (max=100) + tense + mood + voice
-        funct = vectorizer.pos_dep_tmv
-    elif name == 'all_categories':  # pos1 (max=100) + word1 (max=100) + dep1 (max=100) + tense + mood + voice + pct_quoted
-        funct = vectorizer.all_feature_categories_uni
-    elif name == 'all_categories_best':  # pos1 (max=100) + word1 (max=5000) + dep23 (max=5000) + tense + mood + voice
-        funct = vectorizer.all_feature_categories
-
     f1, auc, weighted_f1, prec, rec, accuracy, auprc, params = tuning.hyperparameter_tuning(algo, X, Y, funct,
                                                                                             NUMBER_OF_FOLDS,
                                                                                             three_class)
@@ -97,17 +69,14 @@ def main(three_class=False):
     kind = '5S'
     for feature_name in features:
         print("\n\n-----------------------\nRUNNING FOR: Kind =", kind, "| Feature =", feature_name)
-        #         X, Y = data_loader.load_data(discard_genres=['OPINION'], remove_annotated_passages=True, remove_mispreds=True)
         X, Y = data_loader.load_annotated_data(threshold=2.5)
-        #         if three_class:
-        #             X, Y = data_loader.load_annotated_data_3class()
         print("\nX: {} | Y: {} | Distribution: {} | Y preview: {}".format(len(X), len(Y), Counter(Y), Y[:3]))
         results_file.write(kind + '_' + str(len(X)) + '\t' + feature_name + '\t')
         run_experiments(algo_name, X, Y, feature_name)
 
 
 if __name__ == '__main__':
-    algo_name = 'logreg'  # 'rf' or 'logreg' or 'svm'
+    algo_name = 'rf'  # 'rf' or 'logreg' or 'svm'
     NUMBER_OF_FOLDS = 5
 
     three_class = False
@@ -127,8 +96,5 @@ if __name__ == '__main__':
     results_file = open(results_path, "w")
     results_file.write("Data\tFeature\tF1-score\tAUROC\tWeighted F1\tPrecision\tRecall\tAccuracy\tAUPRC\tParameters\n")
     features = ['pos1', 'pos2', 'pos3', 'pos23', 'word1', 'word2', 'word3', 'word23', 'dep1', 'dep2', 'dep3', 'dep23']
-    # features = ['pos1', 'pos2', 'pos3', 'pos23', 'word1', 'word2', 'word3', 'word23', 'dep1', 'dep2', 'dep3', 'dep23', 'tense', 'mood', 'voice', 'tense_mood_voice', 'pos_tense', 'pos_mood', 'pos_voice', 'pos_tense_mood_voice', 'pos_tense_mood_voice_quoted', 'pos_dep_tense_mood_voice', 'all_categories']
-    # features = ['pos_tense_mood_voice_quoted']
-    # features = ['pos_mood', 'tense']# 'all_categories']
 
     main()

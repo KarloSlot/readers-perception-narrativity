@@ -1,20 +1,13 @@
 ## Predict on Experimental Data ##
 
 
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score
-from scipy.stats.stats import pearsonr
-
 import sys
+from sklearn.ensemble import RandomForestClassifier
 
 sys.path.append('./classifier/')
 import data_loader
 import vectorizer
-# import best_model
-
-import pickle
 import pandas as pd
-import re
 import os
 import random
 import numpy as np
