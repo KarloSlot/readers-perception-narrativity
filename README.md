@@ -35,6 +35,6 @@ In this subdirectory are two other directories: (1) eli5_results and (2) model_r
 This subdirectory is used for storing graphs and plots construted by correlation.py to illustrate the correlation between aspects of our experiments and those of Piper et al. (2022). These plots can also be found in the main paper.
 
 # References
-Andrew Piper, Sunyam Bagga, Laura Monteiro, Andrew Yang, Marie Labrosse, and Yu Lu Liu. 2021. Detecting narrativity across long time scales. Proceedings *http://ceur-ws. org ISSN*, 1613:0073.
+Andrew Piper, Sunyam Bagga, Laura Monteiro, Andrew Yang, Marie Labrosse, and Yu Lu Liu. 2021. Detecting narrativity across long time scales. Proceedings *http://ceur-ws.org ISSN*, 1613:0073.
 
-Andrew Piper, Sunyam Bagga, Laura Monteiro, Andrew Yang, Marie Labrosse, and Yu Lu Liu. 2022. Unpublished data. 1613:0073.
+Andrew Piper, Sunyam Bagga, Laura Monteiro, Andrew Yang, Marie Labrosse, and Yu Lu Liu. 2022. Unpublished data.
