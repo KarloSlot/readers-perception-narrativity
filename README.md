@@ -3,6 +3,7 @@ In this repository, all code can be found used in the Bachelor Information Scien
 
 DISCLAIMER: Due to legal reasons, I am not able to publish all data, i.e. MinNarrative, gathered by Piper et al. (2022). The selection of data used within this research, enriched with new data can be found in this repository, but all 17K+ files should be provided by Piper et al. (2022).
 
+
 # Structure
 ## Data
 In the subdirectory 'data', the data used in this research can be found. In the 'annotation_rounds', the results of individual annotation rounds can be found. Here are also the construction of the final data set be found. Crucial files for running the classifier and prediction files include:
@@ -18,3 +19,7 @@ In the subdirectory 'data', the data used in this research can be found. In the 
 **process_passages_booknlp.ipynb** - This notebook processes all available MinNarrative files from Piper et al. (2022). This produces a folder named 'BookNLP' which is used to train the computational models and should be put in this folder.
 
 NOTE: All preprocessing and data gathering necessary to run the computational models has been done already. Therefore, to run the classifier, running files stored in 'data' is NOT needed.
+
+
+# Src
+This subdirectory is used to run the actual computational models, 
