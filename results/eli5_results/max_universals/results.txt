@@ -1,0 +1,9 @@
+Filename:                             FLASH_5S_I_Saw_God_Today-txt.txt
+Piper (2022) - Probability.Narrative: 0.9886024459
+Piper (2022) - Agency scores:         [3 5 4]
+Piper (2022) - Event scores:          [4 5 4]
+Piper (2022) - World scores:          [5 5 3]
+Universals - Probability.Narrative:   0.9399688781415608
+Universals - Suspense scores:         [3 3 3]
+Universals - Curiosity scores:        [3 4 4]
+Universals - Surprise scores:         [5 3 4]

@@ -1,0 +1,9 @@
+Filename:                             LEGAL_5S_1_HUBEIMINKANGPHARMACEUTICALLTD_09_19_2006-EX-10-1-OUTSOURCING-AGREEMENT.txt
+Piper (2022) - Probability.Narrative: 0.0580584113
+Piper (2022) - Agency scores:         [1 1 1]
+Piper (2022) - Event scores:          [2 2 2]
+Piper (2022) - World scores:          [1 1 2]
+Universals - Probability.Narrative:   0.0193515298729809
+Universals - Suspense scores:         [1 1 1]
+Universals - Curiosity scores:        [1 1 1]
+Universals - Surprise scores:         [1 1 1]

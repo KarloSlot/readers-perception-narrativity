@@ -1,0 +1,9 @@
+Filename:                             NOVEL-CONT_5S_1-2018_Black-Holly_TheGoldenTower_MG.txt
+Piper (2022) - Probability.Narrative: 0.9999886289
+Piper (2022) - Agency scores:         [5 3 5]
+Piper (2022) - Event scores:          [5 3 5]
+Piper (2022) - World scores:          [5 3 5]
+Universals - Probability.Narrative:   0.90307517769962
+Universals - Suspense scores:         [2 5 4]
+Universals - Curiosity scores:        [4 3 3]
+Universals - Surprise scores:         [1 3 2]

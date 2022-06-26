@@ -1,0 +1,9 @@
+Filename:                             ACADEMIC-SCIENCE_5S_628.txt
+Piper (2022) - Probability.Narrative: 0.002
+Piper (2022) - Agency scores:         [2 2 1]
+Piper (2022) - Event scores:          [3 2 2]
+Piper (2022) - World scores:          [2 2 2]
+Universals - Probability.Narrative:   0.0879093569813278
+Universals - Suspense scores:         [1 1 1]
+Universals - Curiosity scores:        [1 1 1]
+Universals - Surprise scores:         [1 2 1]

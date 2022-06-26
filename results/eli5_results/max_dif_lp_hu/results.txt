@@ -1,0 +1,9 @@
+Filename:                             APHORISM_5S_ADORNO_5_2.txt
+Piper (2022) - Probability.Narrative: 0.0402029217
+Piper (2022) - Agency scores:         [1 1 1]
+Piper (2022) - Event scores:          [3 2 1]
+Piper (2022) - World scores:          [2 2 1]
+Universals - Probability.Narrative:   0.7100996159429225
+Universals - Suspense scores:         [2 2 4]
+Universals - Curiosity scores:        [1 2 4]
+Universals - Surprise scores:         [2 1 4]
