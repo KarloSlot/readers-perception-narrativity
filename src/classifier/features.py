@@ -12,8 +12,6 @@ from string import punctuation
 
 if path.exists('../data/BookNLP/'):
     BOOK_PATH_1 = '../data/BookNLP/'
-    # Uncomment one (out of the 2) when predicting: new poetry-annotations now
-    # BOOK_PATH_2 = '/Users/sunyambagga/Desktop/txtLAB-2/detecting-narrativity/booknlp-output-science-jstor/'
     BOOK_PATH_2 = '../data/BookNLP/'
     BOOK_PATH_3 = '../data/BookNLP/'
 else:
