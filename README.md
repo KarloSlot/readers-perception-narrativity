@@ -6,7 +6,7 @@ DISCLAIMER: Due to legal reasons, I am not able to publish all data, i.e. all Mi
 
 # Structure
 ## 'data'
-In the subdirectory 'data', the data used in this research can be found. In the 'annotation_rounds', the results of individual annotation rounds can be found. Here are also the construction of the final data set be found. Crucial files for running the classifier and prediction files include:
+In the subdirectory 'data', the data used in this research can be found. In the 'annotation_rounds', the results of individual annotation rounds can be found and the functions to calculate IRR. Here are also the construction of the final data set be found. Crucial files for running the classifier and prediction files include:
 
 **MinNarrative_ReaderData_Final.csv** - Small data set of corpus from Piper et al. (2022).
 
@@ -18,17 +18,16 @@ In the subdirectory 'data', the data used in this research can be found. In the 
 
 **process_passages_booknlp.ipynb** - This notebook processes all available MinNarrative files from Piper et al. (2022). This produces a folder named 'BookNLP' which is used to train the computational models and should be put in this folder.
 
-NOTE: All preprocessing and data gathering necessary to run the computational models has been done already in this research. If you wish to gather the BookNLP data, you should obtain the MinNarrative files from Piper et al. (2022), run keep_dataset_only.py, followed by process_passages_nlp.ipynb. Make sure that the outcoming 'BookNLP' directory is unzipped in the folder 'data'. When having trouble, please contact me (For LinkedIn, see Profile).
-
+NOTE: All preprocessing and data gathering necessary to run the computational models has been done already in this research. If you wish to gather the BookNLP data, you should obtain the MinNarrative files from Piper et al. (2022), run keep_dataset_only.py, followed by process_passages_nlp.ipynb. The Python Notebook was constructed to work using Google Colab, ensure that the paths in the file are the same as those on your Google Driv. Make sure that the outcoming 'BookNLP' directory is unzipped in the folder 'data'. Please contact me for more information (For LinkedIn, see Profile).
 
 ## 'src'
 This subdirectory is used to run the actual computational models, the files in here are sometimes part of a sub-subdirectory 'classifier'. This is specified when needed.
 
 **classifier/data_loader.py + classifier/features.py + classifier/tuning.py + classifier/vectorizer.py** - Files used by Piper et al. (2021) to determine several NLP features of texts, construct and load training data and train computational models.
 
-**classifier/main.py** - File to run when training computation models to detect narrativity, returns a file which shows evaluation metrics, determining the best model. These returned files can be found in results/model_results.
+**classifier/main.py** - File to run when training computation models to detect narrativity, returns a file which shows evaluation metrics, determining the best model. These returned files can be found in results/model_results. Requires BookNLP.
 
-**predict.py** - File to predict the narrative probabilities using computational methods (default model is 'word1', since this is the best performing model). This file also provide analysis of prominent passages, such as passages with a high narrative probability using ELI5. These results can be found in results/eli5_results.
+**predict.py** - File to predict the narrative probabilities using computational methods (default model is 'word1', since this is the best performing model). This file also provide analysis of prominent passages, such as passages with a high narrative probability using ELI5. These results can be found in results/eli5_results. Requires BookNLP.
 
 ## 'results'
 In this subdirectory are two other directories: (1) eli5_results and (2) model_results. In eli5_results, the produced ELI5 from predict.py can be found as per passage (accompanied with some passage information, such as narrative probability) and the general weights per feature, or word. In model_results, the results from main.py can be found, where the score of each pair of method and feature components can be found, e.g. RF with word-unigrams.
