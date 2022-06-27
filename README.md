@@ -5,6 +5,8 @@ DISCLAIMER: Due to legal reasons, I am not able to publish all data, i.e. all Mi
 
 
 # Structure
+**Annotation Guidebook.pdf** - Guidelines used for annotating passages based on suspense, curiosity and surprise.
+
 ## 'data'
 In the subdirectory 'data', the data used in this research can be found. In the 'annotation_rounds', the results of individual annotation rounds can be found and the functions to calculate IRR. Here are also the construction of the final data set be found. Crucial files for running the classifier and prediction files include:
 
