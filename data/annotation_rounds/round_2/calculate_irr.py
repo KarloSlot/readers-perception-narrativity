@@ -3,6 +3,11 @@ import numpy as np
 
 
 def get_ADI(df_numpy):
+    """
+    Calculate ADI score
+    :param df_numpy: DataFrame of annotations as numpy array
+    :return: float
+    """
     avg_deviation_list = []
     for row in df_numpy:
         deviation_list = []

@@ -78,6 +78,13 @@ def get_kendall(x, y):
 
 
 def get_plot(x, y, pearson):
+    """
+    Get regression plot of points with linear regression line (pearson)
+    :param x: Numpy array
+    :param y: Numpy array
+    :param pearson: float
+    :return: regression plot
+    """
     return sns.regplot(x=x,
                        y=y,
                        color='green',
