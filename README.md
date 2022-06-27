@@ -1,7 +1,7 @@
 # READ ME (readers-perception-narrativity)
 In this repository, all code can be found used in the Bachelor Information Science Thesis "The Element of Surprise, Suspense and Curiosity: Annotation of Readers’ Perception to Detect Narrativity" by K.H.R. Slot. Parts of the code employed was provided by Piper et al. (2021), while the data was provided by Piper et al. (2022). For that, I am grateful.
 
-DISCLAIMER: Due to legal reasons, I am not able to publish all data, i.e. MinNarrative, gathered by Piper et al. (2022). The selection of data used within this research, enriched with new data can be found in this repository, but all 17K+ files should be provided by Piper et al. (2022).
+DISCLAIMER: Due to legal reasons, I am not able to publish all data, i.e. all MinNarrative files, gathered by Piper et al. (2022). The selection of data used within this research, enriched with new data can be found in this repository, but all 17K+ files should be provided by Piper et al. (2022).
 
 
 # Structure
